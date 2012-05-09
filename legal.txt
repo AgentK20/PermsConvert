@@ -1,0 +1,7 @@
+LEGAL:
+Frontend website based on Tad Hardesty's Permissions converter located at http://wombat.platymuus.com/minecraft/permissions/
+Converter written from scratch by AgentKid: http://araeosia.com/
+Web hosting and domain by Araeosia: http://araeosia.com/
+Your files may or may not be kept indefinitely at our discretion. They will probably be purged every night at midnight.
+Files that you upload may be read by anyone including us without warning. By using our site, you agree that you're not going to use our site in any way against us.
+All interaction with our site is logged indefinitely.

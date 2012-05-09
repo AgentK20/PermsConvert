@@ -1,0 +1,72 @@
+/* 
+    Document   : index.css
+    Created on : May 1, 2012, 4:52:56 PM
+    Author     : AgentKid
+    Description:
+        index.php s stylesheet
+*/
+
+root { 
+    display: block;
+}
+
+textarea#zone0 {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+textarea#zone1 {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+textarea#zone2 {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+textarea#zone3 {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+textarea#zone4 {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+textarea#zone5 {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
