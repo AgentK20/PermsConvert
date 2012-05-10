@@ -23,6 +23,9 @@ function array_merge_recursive_distinct () {
   return $base;
 }
 
+// Initialize arrays
+$finalgroups = array();
+$finalusers = array();
 if($_POST['type']=='bperms'){
     if(isset($_POST['bpermgroups']) && isset($_POST['bpermusers']) && $_POST['bpermgroups']!='Paste your groups.yml here' && $_POST['bpermusers']!='Paste your users.yml here'){
         $usersyml = yaml_parse($_POST['bpermusers']);
@@ -39,9 +42,6 @@ if($_POST['type']=='bperms'){
         echo "User parsing failed!";
         exit;
     }
-    // Initialize arrays
-    $finalgroups = array();
-    $finalusers = array();
     // Users.yml conversion
     $userkeys = array_keys($usersyml['users']);
     foreach($userkeys as $user){
