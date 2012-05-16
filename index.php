@@ -69,7 +69,8 @@ Or upload it directly: <input type='file' name='permsyml'><br />
 			<hr width="100%" />
 			&copy; AgentKid 2012<br />
                         Frontend design based on <a href='http://wombat.platymuus.com/minecraft/permissions/'>Tad Hardesty's PermissionsBukkit converter</a><br />
-                        <a href='http://araeosia.com/windperms/legal.txt'>Legal Stuff</a>
+                        <a href='http://araeosia.com/windperms/legal.txt'>Legal Stuff</a><br />
+                        <a href='https://github.com/AgentKid/PermsConvert'>Source</a>
 		</td></tr>
 	</table>
 </body></html>
