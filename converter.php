@@ -34,11 +34,11 @@ if($_POST['type']=='bperms'){
         $usersyml = yaml_parse_file($_FILES['bpermusersfile']['tmp_name']);
         $groupsyml = yaml_parse_file($_FILES['bpermgroupsfile']['tmp_name']);
     }
-    if (!isset($groupsyml)){
+    if ($groupsyml == false){
         echo "Groups parsing failed!";
         exit;
     }
-    if (!isset($usersyml)){
+    if ($usersyml == false){
         echo "User parsing failed!";
         exit;
     }
@@ -235,6 +235,10 @@ if($_POST['type']=='bperms'){
     } elseif(isset($_FILES['pexyml'])){
         $permsyml = yaml_parse_file($_FILES['pexyml']['tmp_name']);
     }
+    if($permsyml == false){
+        echo "YAML parsing failed!";
+        exit;
+    }
     $userkeys = array_keys($permsyml["users"]);
     foreach($userkeys as $user){
         if(count($permsyml["users"][$user])!=0){
@@ -420,6 +424,14 @@ if($_POST['type']=='bperms'){
     } elseif(isset($_FILES['usersyml']) && isset($_FILES['groupsyml'])){
         $usersyml = yaml_parse_file($_FILES['usersyml']['tmp_name']);
         $groupsyml = yaml_parse_file($_FILES['groupsyml']['tmp_name']);
+    }
+    if($usersyml == false){
+        echo "Users.yml parsing failed.";
+        exit;
+    }
+    if($groupsyml == false){
+        echo "Groups.yml parsing failed.";
+        exit;
     }
     $userkeys = array_keys($usersyml['users']);
     foreach($userkeys as $user){
@@ -655,6 +667,10 @@ if($_POST['type']=='bperms'){
         $permbukkit = yaml_parse($_POST['permbukkit']);
     } elseif (isset($_FILES['permsyml'])){
         $permbukkit = yaml_parse_file($_FILES['permsyml']['tmp_name']);
+    }
+    if($permbukkit == false){
+        echo "Permissions.yml parsing failed!";
+        exit;
     }
     $userkeys = array_keys($permbukkit['users']);
     foreach($userkeys as $user){
